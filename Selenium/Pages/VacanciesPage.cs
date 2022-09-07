@@ -34,8 +34,6 @@ namespace Selenium.Pages
         IWebElement jobs;
         public void SelectDepartment(string departmentName)
         {
-
-            var departmentsDropDown = driver.FindElement(By.CssSelector(".col-lg-4 div:nth-of-type(2) #sl"));
             departmentsDropDown.Click();
             var departmentButton = departmentsDropDown.FindElement(By.XPath($"//a[.='{departmentName}']"));
             //var department = departmentButton(e => e.Text.Equals(departmentName, StringComparison.CurrentCultureIgnoreCase));
